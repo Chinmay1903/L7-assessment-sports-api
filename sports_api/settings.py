@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'drf_yasg',
+    'sportsapp',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +71,10 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'sports_api.wsgi.application'
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}
 
 
 # Database
